@@ -39,7 +39,7 @@ namespace WordCounter.Objects
       }
       else
       {
-        return 0;
+        return 500;
       }
     }
   }
