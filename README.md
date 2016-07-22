@@ -8,7 +8,7 @@ _Allows the user to determine word count from a pair of inputs (input 1 is a sin
 
 ## Setup/Installation
 
-_Files can be cloned from https://github.com/aniekamp/word-count.git and run in a browser (requires a server environment)._
+_Files can be cloned from https://github.com/aniekamp/word-counter.git and run in a browser (requires a server environment)._
 
 _Using Mono in the root directory, type the following at the command prompt:
 
