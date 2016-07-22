@@ -53,5 +53,11 @@ namespace WordCounter.Objects
       RepeatCounter testRepeatCounter = new RepeatCounter("hello", "Hello there, I say!");
       Assert.Equal(1, testRepeatCounter.CountRepeats());
     }
+    [Fact]
+    public void T9_CountRepeats_helloToHelloIsayhelloExclamation_2()
+    {
+      RepeatCounter testRepeatCounter = new RepeatCounter("hello", "Hello. I say, hello!");
+      Assert.Equal(2, testRepeatCounter.CountRepeats());
+    }
   }
 }

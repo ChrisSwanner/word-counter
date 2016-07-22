@@ -32,6 +32,7 @@ _Navigate to http://localhost:5004 in your browser._
 | Detect occurrence of word with multiple 2nd input | 'and' | 'cat and dog' | Frequency: 1 | Smallest step once matching 1 for 1 letter/word and 1 to 2+ letters is to compare 1 to 2+ words - now beneficial to split into array and loop over each word |
 | Detect occurrence of word with multiple 2nd input | 'and' | 'cat and dog and fish' | Frequency: 2 | Smallest incremental step - ensures loop captures all occurrences of word in similar pattern to single letter spec above |
 | Detect occurrence of word with case differences | 'hello' | 'Hello there, I say!' | Frequency: 1) | Ensures method catches case difference but doesn't necessarily address special characters or punctuation. |
+| Detect occurrence even with punctuation | 'hello' | 'Hello. I say, hello!' | Frequency: 2) | Logical next step -ensures method catches a match when typical punctuation is used, but doesn't necessarily account for other unforeseen special characters. |
 
 
 ## Known Bugs
