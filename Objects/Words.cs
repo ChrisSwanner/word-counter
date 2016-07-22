@@ -2,12 +2,12 @@ using System;
 
 namespace WordCounter.Objects
 {
-  public class Words
+  public class RepeatCounter
   {
     private string _wordToIdentify;
     private string _stringToSearch;
 
-    public Words(string wordToIdentify, string stringToSearch)
+    public RepeatCounter(string wordToIdentify, string stringToSearch)
     {
       _wordToIdentify = wordToIdentify;
       _stringToSearch = stringToSearch;
@@ -31,7 +31,7 @@ namespace WordCounter.Objects
       _stringToSearch = newStringToSearch;
     }
 
-    public int Compare()
+    public int CountRepeats()
     {
       char idWord = System.Convert.ToChar(this.GetWordToIdentify());
       char[] searchWords = this.GetStringToSearch().ToCharArray();

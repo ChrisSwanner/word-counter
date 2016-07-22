@@ -8,26 +8,26 @@ namespace WordCounter.Objects
     [Fact]
     public void T1_Compare_aToa_1()
     {
-      Words testWords = new Words("a", "a");
-      Assert.Equal(1, testWords.Compare());
+      RepeatCounter testRepeatCounter = new RepeatCounter("a", "a");
+      Assert.Equal(1, testRepeatCounter.CountRepeats());
     }
     [Fact]
-    public void T2_Compare_aTob_0()
+    public void T2_CountRepeats_aTob_0()
     {
-      Words testWords = new Words("a", "b");
-      Assert.Equal(0, testWords.Compare());
+      RepeatCounter testRepeatCounter = new RepeatCounter("a", "b");
+      Assert.Equal(0, testRepeatCounter.CountRepeats());
     }
     [Fact]
-    public void T3_Compare_aToab_1()
+    public void T3_CountRepeats_aToab_1()
     {
-      Words testWords = new Words("a", "a b");
-      Assert.Equal(1, testWords.Compare());
+      RepeatCounter testRepeatCounter = new RepeatCounter("a", "a b");
+      Assert.Equal(1, testRepeatCounter.CountRepeats());
     }
     [Fact]
-    public void T4_Compare_aToaba_3()
+    public void T4_CountRepeats_aToaba_3()
     {
-      Words testWords = new Words("a", "a b a");
-      Assert.Equal(3, testWords.Compare());
+      RepeatCounter testRepeatCounter = new RepeatCounter("a", "a b a");
+      Assert.Equal(3, testRepeatCounter.CountRepeats());
     }
   }
 }
