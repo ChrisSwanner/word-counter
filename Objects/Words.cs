@@ -33,8 +33,8 @@ namespace WordCounter.Objects
 
     public int CountRepeats()
     {
-      string idWord = this.GetWordToIdentify();
-      string[] searchWords = this.GetStringToSearch().Split(' ');
+      string idWord = this.GetWordToIdentify().ToLower();
+      string[] searchWords = this.GetStringToSearch().ToLower().Split(' ');
 
       int repeatCounter = 0;
 
