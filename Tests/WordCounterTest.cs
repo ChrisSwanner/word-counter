@@ -17,5 +17,11 @@ namespace WordCounter.Objects
       Words testWords = new Words("a", "b");
       Assert.Equal(0, testWords.Compare());
     }
+    [Fact]
+    public void T3_Compare_aToab_1()
+    {
+      Words testWords = new Words("a", "a b");
+      Assert.Equal(1, testWords.Compare());
+    }
   }
 }
