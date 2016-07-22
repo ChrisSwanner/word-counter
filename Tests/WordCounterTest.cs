@@ -27,7 +27,7 @@ namespace WordCounter.Objects
     public void T4_CountRepeats_aToaba_3()
     {
       RepeatCounter testRepeatCounter = new RepeatCounter("a", "a b a");
-      Assert.Equal(3, testRepeatCounter.CountRepeats());
+      Assert.Equal(2, testRepeatCounter.CountRepeats());
     }
   }
 }

@@ -35,18 +35,17 @@ namespace WordCounter.Objects
     {
       char idWord = System.Convert.ToChar(this.GetWordToIdentify());
       char[] searchWords = this.GetStringToSearch().ToCharArray();
+
+      int repeatCounter = 0;
+
       foreach (char letter in searchWords)
       {
         if (idWord == letter)
         {
-          return 1;
-        }
-        else
-        {
-          return 0;
+          repeatCounter++;
         }
       }
-      return 0;
+      return repeatCounter;
     }
   }
 }
