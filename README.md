@@ -24,7 +24,7 @@ _Navigate to http://localhost:5004 in your browser._
 
 ## Specifications
 | Behavior | Input Example 1 | Input Example 2 |  Output Example  | Simplicity Justification |
-| ------------- |:-------------:|:-----:|:--:|
+| -------- |:---------------:|:---------------:|:----------------:|:------------------------ |
 | Detect occurrence of single letter and identical 2nd input | 'a' | 'a' | Frequency: 1 | Smallest available comparison/test of matching behavior - no need to split or loop |
 | Detect occurrence of single letter in multiple 2nd input | 'a' | 'a b' | Frequency: 1 | Smallest step once matching 1 for 1 letter/word is to compare 1 to 2+ letters - able to match without need to split string into array of words - now beneficial to use a loop |
 | Detect increase frequency of occurrences | 'a' | 'a b a' | Frequency: 2 | Smallest incremental step - ensures loop captures all occurrences of letter |
