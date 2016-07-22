@@ -44,7 +44,6 @@ namespace WordCounter.Objects
         }
       }
       string result = new string(searchCharArray);
-      Console.WriteLine(result);
       return result;
     }
 
