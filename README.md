@@ -41,7 +41,7 @@ _None known._
 
 ## Technologies Used
 
-_C#, Razor, Nancy, HTML, CSS_
+_C#, Razor, Nancy, HTML, CSS, Xunit_
 
 ### License
 
