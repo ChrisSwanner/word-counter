@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 
 namespace WordCounter.Objects
 {
@@ -31,11 +32,27 @@ namespace WordCounter.Objects
       _stringToSearch = newStringToSearch;
     }
 
+    public string RemovePunctuation()
+    {
+      char[] punctuation = new char[] {'?', '!', '\'', '\'', '.', ',', '(', ')', ';', ':'};
+      char[] searchCharArray = this.GetStringToSearch().ToCharArray();
+      for (int i = 0; i < searchCharArray.Length; i++)
+      {
+        if (punctuation.Contains(searchCharArray[i]))
+        {
+          searchCharArray[i] = ' ';
+        }
+      }
+      string result = new string(searchCharArray);
+      Console.WriteLine(result);
+      return result;
+    }
+
     public int CountRepeats()
     {
+      string punctuationRemoved = this.RemovePunctuation();
       string idWord = this.GetWordToIdentify().ToLower();
-      string[] searchWords = this.GetStringToSearch().ToLower().Split(' ');
-
+      string[] searchWords = punctuationRemoved.ToLower().Split(' ');
       int repeatCounter = 0;
 
       foreach (string word in searchWords)
