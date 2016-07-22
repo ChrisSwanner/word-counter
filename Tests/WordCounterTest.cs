@@ -23,5 +23,11 @@ namespace WordCounter.Objects
       Words testWords = new Words("a", "a b");
       Assert.Equal(1, testWords.Compare());
     }
+    [Fact]
+    public void T4_Compare_aToaba_3()
+    {
+      Words testWords = new Words("a", "a b a");
+      Assert.Equal(3, testWords.Compare());
+    }
   }
 }
