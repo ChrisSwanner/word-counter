@@ -29,5 +29,11 @@ namespace WordCounter.Objects
       RepeatCounter testRepeatCounter = new RepeatCounter("a", "a b a");
       Assert.Equal(2, testRepeatCounter.CountRepeats());
     }
+    [Fact]
+    public void T5_CountRepeats_andToand_1()
+    {
+      RepeatCounter testRepeatCounter = new RepeatCounter("and", "and");
+      Assert.Equal(1, testRepeatCounter.CountRepeats());
+    }
   }
 }
