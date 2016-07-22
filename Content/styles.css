@@ -4,7 +4,7 @@
 }
 
 #banner-title {
-  border-bottom: 4px solid plum;
+  border-bottom: 4px solid hotpink;
   text-align: center;
   width: 50%;
   min-width: 300px;
@@ -15,10 +15,6 @@
 .main-area {
   padding-top: 35px;
   font-size: 18px;
-}
-
-.sub-note {
-  font-size: 12px;
 }
 
 .count-container {
@@ -39,11 +35,15 @@
 
 .app-btn {
   border-radius: 0;
-  color: #555;
+  color: #eee;
   font-weight: bold;
   font-size: 18px;
-  background-color: plum;
+  background-color: seagreen;
   margin-top: 25px;
   width: 100%;
   text-align: center;
+}
+
+.app-btn:hover {
+  color: hotpink;
 }
