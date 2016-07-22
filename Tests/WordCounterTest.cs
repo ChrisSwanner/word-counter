@@ -47,5 +47,11 @@ namespace WordCounter.Objects
       RepeatCounter testRepeatCounter = new RepeatCounter("and", "cat and dog and fish");
       Assert.Equal(2, testRepeatCounter.CountRepeats());
     }
+    [Fact]
+    public void T8_CountRepeats_helloToHellothereIsayExclamation_1()
+    {
+      RepeatCounter testRepeatCounter = new RepeatCounter("hello", "Hello there, I say!");
+      Assert.Equal(1, testRepeatCounter.CountRepeats());
+    }
   }
 }
