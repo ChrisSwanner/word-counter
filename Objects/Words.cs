@@ -33,14 +33,20 @@ namespace WordCounter.Objects
 
     public int Compare()
     {
-      if (this.GetWordToIdentify() == this.GetStringToSearch())
+      char idWord = System.Convert.ToChar(this.GetWordToIdentify());
+      char[] searchWords = this.GetStringToSearch().ToCharArray();
+      foreach (char letter in searchWords)
       {
-        return 1;
+        if (idWord == letter)
+        {
+          return 1;
+        }
+        else
+        {
+          return 0;
+        }
       }
-      else
-      {
-        return 0;
-      }
+      return 0;
     }
   }
 }
