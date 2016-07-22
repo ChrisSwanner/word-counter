@@ -33,8 +33,14 @@ namespace WordCounter.Objects
 
     public int Compare()
     {
-      //initial placeholder return value of method
-      return 0;
+      if (this.GetWordToIdentify() == this.GetStringToSearch())
+      {
+        return 1;
+      }
+      else
+      {
+        return 0;
+      }
     }
   }
 }
