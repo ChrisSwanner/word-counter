@@ -33,14 +33,14 @@ namespace WordCounter.Objects
 
     public int CountRepeats()
     {
-      char idWord = System.Convert.ToChar(this.GetWordToIdentify());
-      char[] searchWords = this.GetStringToSearch().ToCharArray();
+      string idWord = this.GetWordToIdentify();
+      string[] searchWords = this.GetStringToSearch().Split(' ');
 
       int repeatCounter = 0;
 
-      foreach (char letter in searchWords)
+      foreach (string word in searchWords)
       {
-        if (idWord == letter)
+        if (idWord == word)
         {
           repeatCounter++;
         }
