@@ -2,7 +2,13 @@
   Layout = "Views/Shared/_Layout.cshtml";
 }
 <div class="main-area">
-  <h3>Your word is: "@Model.GetWordToIdentify()"</h3>
+  <h3>Your word is: "<span class="user-input">@Model.GetWordToIdentify()</span>"</h3>
   <h3>Your sentence or phrase is: "@Model.GetStringToSearch()"</h3>
-  <h3>We found @Model.CountRepeats() instances of "@Model.GetWordToIdentify()" in your sentence or phrase!</h3>
+  <br>
+  <div class="count-container">
+    <h3>We found @Model.CountRepeats() instances of "@Model.GetWordToIdentify()" in your sentence or phrase!</h3>
+  </div>
+  <form action="/">
+    <button type="submit" class="btn app-btn">Return to Home</button>
+  </form>
 </div>

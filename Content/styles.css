@@ -17,6 +17,22 @@
   font-size: 18px;
 }
 
+.count-container {
+  background-color: lightyellow;
+  padding: 30px;
+  text-align: center;
+}
+
+.count-container h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.user-input {
+  color: red;
+  border-bottom: 3px solid hotpink;
+}
+
 .app-btn {
   border-radius: 0;
   color: #555;
