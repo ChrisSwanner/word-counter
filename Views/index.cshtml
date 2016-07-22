@@ -1,7 +1,9 @@
-<h1>Home Placeholder</h1>
+@{
+  Layout = "Views/Shared/_Layout.cshtml";
+}
 
 <div class="form-area">
-  <form action="result.cshtml" method="post">
+  <form action="/result" method="post">
     <div class="form-group">
       <label for="user-word">Word: </label>
       <input class="form-control" type="text" name="user-word" placeholder="Cheesecake">
@@ -10,6 +12,6 @@
       <label for="user-sentence">Phrase/Sentence: </label>
       <input class="form-control" type="text" name="user-sentence" placeholder="Pizza, pie, cheese, chocolate, cake, and cheesecake!">
     </div>
-    <button type="submit">Compare!</button>
+    <button type="submit" class="btn app-btn" >Compare!</button>
   </form>
 </div>
